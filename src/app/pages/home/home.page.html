@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/gestion-citas">
+        <ion-icon slot="icon-only" name="add-circle-outline"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/configuracion">
+        <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" class="ion-text-center">
+
+  <div *ngIf="citaActual; else noCita">
+    <ion-card>
+      <ion-card-content>
+        <h2>"{{ citaActual.frase }}"</h2>
+        <p>- {{ citaActual.autor }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <ng-template #noCita>
+    <p>No hay citas disponibles.</p>
+  </ng-template>
+
+</ion-content>

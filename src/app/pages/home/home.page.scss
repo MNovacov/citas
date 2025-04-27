@@ -1,0 +1,39 @@
+ion-footer {
+  --background: #c7c4c4; 
+  border-top: 1px solid #ccc; 
+  height: 70px;
+}
+
+ion-toolbar {
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+
+ion-button {
+  font-size: 30px;
+  color: rgb(255, 255, 255); 
+}
+
+ion-icon {
+  font-size: 36px;
+  color: rgb(255, 255, 255); 
+}
+ion-card {
+  margin-top: 100px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+}
+
+h2 {
+  font-size: 24px; /* Más grande para la frase */
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 18px; /* Más pequeño para el autor */
+  font-style: italic;
+  color: #666;
+}
